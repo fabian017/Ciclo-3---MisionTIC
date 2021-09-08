@@ -1,12 +1,12 @@
 body{
     font-family: 'Glory', sans-serif;
     margin:0;
-    background-color: #3ddd7b;
+    background-color: white;
 }
 
 /* HEADER*/
 .nombre-titulo {
-    background-color: #30CE88;
+    background-color: #4DFE3E;
     font-family: 'Shadows Into Light', cursive;
     font-size: 20px;
     padding: 15px 25px 15px 25px;
@@ -145,4 +145,64 @@ h4{
 .parrafo a{
     margin-top: 20px;
     display: inline-block;
+}
+
+/* Seccion Servicios*/
+
+.seccion-servicios .parrafo{
+    max-width: 40%;
+}
+
+.cont-servicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicio{
+    width: 25%;
+    padding: 50px 38px 50px 38px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.color1{
+    background-color: #0036FF;
+    color: white;
+}
+
+.color2{
+    background-color: #4DFE3E;
+}
+
+.servicio h4{
+    font-size: 30px;
+    margin:0;
+}
+
+.servicio img{
+    float: right;
+}
+
+.seccion-servicios{
+    margin-top: 0;
+    border-top: solid;
+    border-color: #36d436;
+    margin-bottom: 50px;
+}
+
+.bb{
+    text-align: center;
+    width:100%;
+}
+
+.bb a{
+    background-color: #5cb8ff;
+    color: black;
+    font-weight: 800;
+}
+
+.bb a:hover{
+    background-color: black;
+    color: white;
 }
