@@ -2,6 +2,7 @@ body{
     font-family: 'Glory', sans-serif;
     margin:0;
     background-color: white;
+    font-size: 18px;
 }
 
 /* HEADER*/
@@ -31,30 +32,37 @@ li{
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
+    transition: all 1s ease;
+    position: relative;
 }
 
 a:hover{
-    color: white;
+    color: black;
     -webkit-transform: scale(1.23);
     transform: scale(1.23);
 }
 
 .boton{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
     background: #131c91;
     padding: 15px 30px 15px 30px;
     color: white;
     border-radius: 8px;
+    transition: all 1s ease;
+    position: relative;
 }
 
 .boton:hover{
     background-color: black;
+    color: white;
+    -webkit-transform: scale(1.13);
+    transform: scale(1.1);
 }
 
 h1{
-    font-size: 60px;
+    font-size: 70px;
     margin: 0;
     color: white;
     padding: 15px 30px 15px 30px;
@@ -78,7 +86,7 @@ background: radial-gradient(circle, rgba(84,246,135,0.958420868347339) 0%, rgba(
 }
 
 h2{
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 0;
     margin-bottom: 35px;
     color: white;
@@ -164,6 +172,14 @@ h4{
     padding: 50px 38px 40px 38px;
     border-radius: 10px;
     margin-bottom: 40px;
+    overflow:hidden;
+    transition: all 1s ease;
+    position: relative;
+}
+
+.servicio:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1.05);
 }
 
 .color1{
@@ -180,6 +196,9 @@ h4{
     margin:0;
 }
 
+.servicio p{
+    font-size: 17px;
+}
 .servicio img{
     float: right;
 }
@@ -205,12 +224,77 @@ h4{
 }
 
 .bb a{
-    background-color: #5cb8ff;
+    background-color: rgb(50, 197, 255);
     color: black;
     font-weight: 800;
+    transition: all 1s ease;
+    position: relative;
 }
 
 .bb a:hover{
     background-color: black;
     color: white;
+    -webkit-transform: scale(1.23);
+    transform: scale(1.23);
+}
+
+/* Footer */
+footer{
+    background: #0036FF;
+    padding: 47px;
+    color: white;
+}
+
+.cont-footer{
+    margin-top: -20px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-footer-icono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-footer ul{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 25px;
+}
+
+.fab{
+     font-size: 20px;
+ }
+
+.fab:hover{
+    color: black;
+    -webkit-transform: scale(1.28);
+    transform: scale(1.58);
+}
+
+.menu-footer-elemento{
+    font-size: 15px;
+}
+.menu-footer-elemento span{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu-footer-elemento li{
+    font-size: 15px;
+    margin: 10px -30px;
+}
+
+.menu-footer-elemento li:hover{
+    -webkit-transform: scale(1.23);
+    transform: scale(1.23);
+    color: black;
+}
+
+.menu-footer-elemento ul{
+    display: block;
 }
