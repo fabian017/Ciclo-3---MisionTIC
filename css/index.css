@@ -161,7 +161,7 @@ h4{
 
 .servicio{
     width: 25%;
-    padding: 50px 38px 50px 38px;
+    padding: 50px 38px 40px 38px;
     border-radius: 10px;
     margin-bottom: 40px;
 }
@@ -191,6 +191,14 @@ h4{
     margin-bottom: 50px;
 }
 
+.titulo{
+    display:flex;
+    justify-content: space-around;
+}
+
+.fa-crown{
+    font-size: 2rem;
+}
 .bb{
     text-align: center;
     width:100%;
