@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 body{
-background: rgb(84,246,135);
-background: radial-gradient(circle, black, rgba(0,56,255,1) 100%);
+background: rgb(20,113,231);
+background: radial-gradient(circle, rgba(20,113,231,0.9724264705882353) 13%, rgba(31,210,64,0.9023984593837535) 100%);
 background-size:auto;
 background-repeat: no-repeat;
 height: 100%;
