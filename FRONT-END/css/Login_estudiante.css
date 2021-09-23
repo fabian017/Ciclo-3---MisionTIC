@@ -1,5 +1,5 @@
 body{
-    background: rgb(20,113,231);
+    background-color: rgba(19, 133, 40, 0.856);
     background-size:auto;
     background-repeat: no-repeat;
     height: 100%;
@@ -16,13 +16,13 @@ body{
     color: white;
     }
 .card{
-     height: 425px;
+     height: 500Spx;
      margin-top: auto;
      margin-bottom: auto;
      width: 400px;
      border-radius: 7px;
-     background: rgb(20,145,231);
-     background: linear-gradient(137deg, rgba(20,145,231,0.958420868347339) 13%, rgba(10,17,18,0.7539390756302521) 100%);
+     background: rgb(31,210,64,0.9023984593837535);
+     background: linear-gradient(137deg, rgba(31,210,64,0.9023984593837535) 13%, rgba(10,17,18,0.7539390756302521) 100%);
      }
 .remember{
 color: white;
@@ -48,3 +48,9 @@ margin-right: 5px;
         color: black;
         background-color: white;
         }
+#icono1{
+    color: red;
+}
+#icono2{
+    color:rgb(92, 194, 67);
+}
