@@ -1,0 +1,33 @@
+body{
+    font-family: 'Glory', sans-serif;
+}
+
+.navbar-brand{
+    background-color: #4DFE3E;
+    font-family: 'Shadows Into Light', cursive;
+    color: black;
+    font-size: 20px;
+    padding: 15px 25px 15px 25px;
+}
+
+.navbar{
+    color: white;
+    background-color: #1471e7;
+}
+
+.color{
+    color: white;
+}
+
+.card{
+    background-color: red;
+}
+
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+.carousel-control-next{
+    color: #1471e7;
+}
