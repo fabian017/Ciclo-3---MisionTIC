@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
 </head>
 <body>
     <div class="container">
@@ -32,32 +33,35 @@
                     <center><h3>Registro Profesor</h3></center>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form id="formularioProfesor">
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Nombres">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombres">
+                            <p class="text-success" id="parrafoValidarNombre"></p>
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Apellidos">
+                            <input type="text" class="form-control" id="apellido" placeholder="Apellidos">
+                            <p class="text-success" id="parrafoValidarApellidos"></p>
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-at"></i></span>
                             </div>
-                            <input type="email" class="form-control" placeholder="Correo Electronico">
+                            <input type="email" class="form-control" id="email" placeholder="Correo Electronico">
+                            <p class="text-success" id="parrafoValidarEmail"></p>
                         </div>
                     
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-globe-asia"></i></span>
                             </div>
-                            <select class="form-control" placeholder="idomas que maneja">
-                               <option value="none"selected>inserte el lenguaje que mejor manejas</option>
+                            <select class="form-control" id="idioma" placeholder="Idioma que maneja">
+                               <option value="none"selected>Selecciona el idioma que vas a enseñar</option>
                                <option value=" Inglés " >        Inglés    </option>           
                                <option value=" Chino mandarín "> Chino mandarín    </option>  
                                <option value=" Hindi "  >        Hindi    </option>
@@ -107,17 +111,19 @@
                                <option value=" Uzbekistán">      Uzbekistán   </option>  
                                <option value=" Rumano ">         Rumano    </option>  
                                <option value=" Sindhi " >        Sindhi    </option> 
-                               <option value=" Tagálog " >       Tagálog   </option>            
-                              </select>
+                               <option value=" Tagálog " >       Tagálog   </option>           
+                            </select>
+                            
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-key"></i></span>
                             </div>
-                            <input type="password" class="form-control" placeholder="Contraseña">
+                            <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
+                            <p class="text-success" id="parrafoValidarContraseña"></p>
                         </div>
                         <div class="form-group text-center mt-2">
-                            <input type="submit" value="Login" class="btn login_btn">
+                            <button type="submit" class="btn login_btn" id="login" onclick="validarDatos()">Login</button>
                         </div>
                     </form>
                 </div>
@@ -125,5 +131,7 @@
             </div>
         </div>
     </div>
+    <script src="js/js_login_profesor.js"></script>
 </body>
+
 </html>

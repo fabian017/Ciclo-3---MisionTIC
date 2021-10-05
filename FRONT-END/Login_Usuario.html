@@ -32,43 +32,48 @@
                     <center><h3>Registro Usuario</h3></center>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form id="formularioUsuario">
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Nombres" required=true>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombres">
+                            <p class="text-success" id="parrafoValidarNombre"></p>
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Apellidos" required=true>
+                            <input type="text" class="form-control" id="apellido" placeholder="Apellidos">
+                            <p class="text-success" id="parrafoValidarApellidos"></p>
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group form-group">
                                 <div class="input-group-prepend">
                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
                                 </div>
-                                <input type="number" class="form-control" placeholder="edad" required=true maxlength="">
+                                <input type="number" class="form-control" id="edad" placeholder="edad" maxlength="2">
+                                <p class="text-success" id="parrafoValidarEdad"></p>
                             </div>
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-at"></i></span>
                             </div>
-                            <input type="email" class="form-control" placeholder="Correo Electronico" required=true>
+                            <input type="email" class="form-control" id="email" placeholder="Correo Electronico">
+                            <p class="text-success" id="parrafoValidarEmail"></p>
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-key"></i></i></span>
                             </div>
-                            <input type="password" class="form-control" placeholder="Contraseña" required=true>
+                            <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
+                            <p class="text-success" id="parrafoValidarContraseña"></p>
                         </div>
                     
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-globe-asia"id="icono2"></i></span>
                             </div>
-                            <select class="form-control" placeholder="Idoma que mejor manejas"required=true>
+                            <select class="form-control" placeholder="Idioma que mejor manejas"required=true>
                                <option value="none"selected>Idoma que mejor manejas</option>
                                <option value=" Inglés " >        Inglés    </option>           
                                <option value=" Chino mandarín "> Chino mandarín    </option>  
@@ -144,7 +149,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-globe-asia"id="icono1"></i></span>
                             </div>
-                            <select class="form-control" placeholder="idoma que peor manejas"required=true>
+                            <select class="form-control" placeholder="Idioma que peor manejas"required=true>
                                <option value="none"selected>idoma que peor manejas</option>
                                <option value=" Inglés " >        Inglés    </option>           
                                <option value=" Chino mandarín "> Chino mandarín    </option>  
@@ -218,7 +223,7 @@
                         </div>
                         
                         <div class="form-group text-center mt-2">
-                            <input type="submit" value="Registrarme" class="btn login_btn">
+                            <input type="submit" value="Registrarme" class="btn login_btn" id="Login" onclick="validarDatos()">
                         </div>
                     </form>
                 </div>
@@ -226,5 +231,6 @@
             </div>
         </div>
     </div>
+    <script src="js/js_login_usuario.js"></script>
 </body>
 </html>
