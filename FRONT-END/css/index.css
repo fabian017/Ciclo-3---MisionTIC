@@ -175,6 +175,7 @@ h4{
     overflow:hidden;
     transition: all 1s ease;
     position: relative;
+    justify-content: center;
 }
 
 .servicio:hover{
